@@ -1,0 +1,82 @@
+﻿@model ASPCoreMVCRepoDB.Models.Athletes
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<div>
+    <h3>Edit Athlete Record</h3>
+</div>
+
+<hr />
+<div class="row">
+    <div class="col-6">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="ID" />
+            <div class="form-group row">
+                <label asp-for="Name" class="control-label col-4"></label>
+                <div class="col-8">
+                    <input asp-for="Name" class="form-control" />
+                    <span asp-validation-for="Name" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="form-group row">
+                <label asp-for="Age" class="control-label col-4"></label>
+                <div class="col-8">
+                    <input asp-for="Age" class="form-control" />
+                    <span asp-validation-for="Age" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="form-group row">
+                <label asp-for="Country" class="control-label col-4"></label>
+                <div class="col-8">
+                    <input asp-for="Country" class="form-control" />
+                    <span asp-validation-for="Country" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="form-group row">
+                <label asp-for="Sport" class="control-label col-4"></label>
+                <div class="col-8">
+                    <input asp-for="Sport" class="form-control" />
+                    <span asp-validation-for="Sport" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="form-group row">
+                <label asp-for="Allowance" class="control-labe col-4"></label>
+                <div class="col-8">
+                    <input asp-for="Allowance" class="form-control" />
+                    <span asp-validation-for="Allowance" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="form-group row">
+                <label asp-for="Weight" class="control-label col-4"></label>
+                <div class="col-8">
+                    <input asp-for="Weight" class="form-control" />
+                    <span asp-validation-for="Weight" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="form-group row">
+                <label asp-for="Height" class="control-label col-4"></label>
+                <div class="col-8">
+                    <input asp-for="Height" class="form-control" />
+                    <span asp-validation-for="Height" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="form-group row">
+                <label asp-for="Gender" class="control-label col-4"></label>
+                <div class="col-8">
+                    <input asp-for="Gender" class="form-control" />
+                    <span asp-validation-for="Gender" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="form-group row">
+                <div class="col-4"></div>
+                <div class="col-8">
+                    <input type="submit" value="Save" class="btn btn-primary" />
+                    <a asp-action="Index" class="btn btn-info">Back to List</a>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
